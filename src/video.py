@@ -34,8 +34,3 @@ class PLVideo:
 
     def __str__(self):
         return self.video_title
-
-
-# youtube = build('youtube', 'v3', developerKey=api_key)
-# video = youtube.videos().list(id='AWX4JnAnjBE', part='snippet,statistics,contentDetails').execute()
-# print(video)
