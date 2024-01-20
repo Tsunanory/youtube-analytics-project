@@ -1,14 +1,11 @@
 import os
 import re
 import json
-from .video import Video
-from .video import PLVideo
-from .channel import Channel
 from datetime import timedelta
 from googleapiclient.discovery import build
 api_key: str = os.getenv('YOUTUBE_API_KEY')
 
-class PlayList(PLVideo, Channel, Video):
+class PlayList():
 
     def __init__(self, playlist_id):
         self.playlist_id = playlist_id
