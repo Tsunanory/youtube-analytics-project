@@ -15,7 +15,7 @@ class PlayList():
                                                      maxResults=50,
                                                      ).execute()
         self.videos = []
-        self.video_ids = [video['snippet']['resourceId']['videoId'] for
+        self.video_ids = [video['snipp          et']['resourceId']['videoId'] for
                        video in self.playlist['items']]
         for video_id in self.video_ids:
             video = youtube.videos().list(id=video_id,
